@@ -7,7 +7,7 @@ def random_sampling(histogram):
     for word in histogram:
         word_count += histogram[word]
     chosen = random.randint(0, word_count-1)
-    print("chosen = " + str(chosen))
+    # print("chosen = " + str(chosen))
 
     #returns the chosen word
     word_number = 0

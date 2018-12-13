@@ -4,11 +4,8 @@ import sys
 class Histogram:
     def histogram(self):
     #take in the words from story file
-        with open('P&P_chapter1_sample_text.txt') as f:
-            content = f.read().split(' ')
-            #FIXME: clean text such that words separated by new lines are two different strings
-            for word_chunk in content:
-                word_chunk.split('\n')
+        with open(sys.argv[1]) as f:
+            content = f.read().split()
         #make a dictionary of words
         word_list = {}
         for word_chunk in content:
