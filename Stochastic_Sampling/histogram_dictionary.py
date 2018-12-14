@@ -1,7 +1,7 @@
 import random
 import sys
 
-class Histogram:
+class Histogram_Dictionary:
     def histogram(self):
     #take in the words from story file
         with open(sys.argv[1]) as f:
@@ -24,7 +24,7 @@ class Histogram:
         print(self.histogram().get(word))
 
 if __name__ == '__main__':
-    text = Histogram()
+    text = Histogram_Dictionary()
     # text.histogram()
     # text.unique_words()
     text.frequency("she")
